@@ -33,9 +33,9 @@
 <body>
 
   <header class="header">
-    <div class="top-heading">
+    <section class="top-heading">
       <p class="m-0">Curated Stories and Research on the Global Igbo Experience</p>
-    </div>
+    </section>
     <div class="navbar-top navbg">
       <div class="container navigation">
         <div class="item-left">
@@ -47,7 +47,7 @@
           </ul>
         </div>
         <div class="item-center">
-          <img src="./images/nzuko.svg" alt="" class="logo">
+          <img src="./images/nzuko.png" alt="" class="logo">
         </div>
         <div class="item-right">
           <div class="search">
@@ -55,6 +55,11 @@
           </div>
           <a href="#" class="primary-button">Sign Up</a>
           <a href="#" class="secondary-button">Log In</a>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -73,11 +78,11 @@
   </header>
   <main>
     <section class="hero">
-      <div class="container-fluid p-lg-0">
-        <div class="row g-0">
-          <div class="col-lg-6 d-flex align-items-center border-bottom">
+      <div class="container-fluid spacer-y p-lg-0">
+        <div class="row g-lg-0 g-4">
+          <div class="col-lg-6 hero-left">
             <div class="content-wrapper">
-              <h1 class="hero-heading">Global <span class="oval-circle">Igbo</span> Stories & Research</h1>
+              <h1 class="hero-heading">Global <span class="oval-circle">Igbo</span><br> Stories & Research</h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since when an unknown printer took a galley.
@@ -115,15 +120,14 @@
     </section>
     <section class="discover-videos">
       <div class="container spacer-y">
-        <div class="row g-3 align-items-center">
+        <div class="row g-3 align-items-center section-heading-row">
           <div class="col-lg-8">
             <h2 class="mb-3">Discover The Best Videos</h2>
             <h6 class="bottom-text para-text">Discover the selection of the most popular Vimeo\YouTube videos.</h6>
           </div>
           <div class="col-lg-4">
             <div class="button-group">
-              <button class="slider-button video-prev primary-border"><img src="./images/icons/arrow-left.svg"
-                  alt=""></button>
+              <button class="slider-button video-prev primary-border"><img src="./images/icons/arrow-left.svg" alt=""></button>
               <button class="slider-button video-next primary-border"><img src="./images/icons/arrow-right.svg" alt=""></button>
             </div>
           </div>
@@ -156,7 +160,7 @@
     </section>
     <section class="highlights bg-yellow">
       <div class="container spacer-y">
-        <div class="heading-row text-center">
+        <div class="heading-row text-lg-center">
           <h2>Our Highlight Stories</h2>
           <h6 class="bottom-text">Discover the selection of the most popular stories</h6>
         </div>
@@ -202,7 +206,7 @@
     </section>
     <section class="discover-videos">
       <div class="container spacer-y">
-        <div class="row g-3 align-items-center">
+        <div class="row g-3 align-items-center section-heading-row">
           <div class="col-lg-8">
             <h2 class="mb-3">Some Latest Articles</h2>
             <h6 class="bottom-text para-text">Discover the selection of the most popular blog</h6>
@@ -252,7 +256,7 @@
     </section>
     <section class="our-gallery bg-yellow">
       <div class="container spacer-y">
-        <div class="row g-3 align-items-center">
+        <div class="row g-3 align-items-center section-heading-row">
           <div class="col-lg-8">
             <h2 class="mb-3">Explore Our Galleries</h2>
             <h6 class="bottom-text">Step inside a gallery from home</h6>
@@ -272,40 +276,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="swiper my-swiper gallery-slider mt-4">
-          <div class="swiper-wrapper gallery">
-            <div class="swiper-slide gallery-wrapper">
-              <div class="gallery-name">
-                <h5>To Our Community</h5>
-              </div>
-              <img src="./images/gallery.png" alt="">
-            </div>
-            <div class="swiper-slide gallery-wrapper">
-              <div class="gallery-name">
-                <h5>To Our Community</h5>
-              </div>
-              <img src="./images/gallery.png" alt="">
-            </div>
-            <div class="swiper-slide gallery-wrapper">
-              <div class="gallery-name">
-                <h5>To Our Community</h5>
-              </div>
-              <img src="./images/gallery.png" alt="">
-            </div>
-            <div class="swiper-slide gallery-wrapper">
-              <div class="gallery-name">
-                <h5>To Our Community</h5>
-              </div>
-              <img src="./images/gallery.png" alt="">
-            </div>
-            <div class="swiper-slide gallery-wrapper">
-              <div class="gallery-name">
-                <h5>To Our Community</h5>
-              </div>
-              <img src="./images/gallery.png" alt="">
-            </div>
-          </div>
-        </div> -->
         <div class="swiper gallery-slide mt-60">
           <div class="swiper-wrapper gallery">
             <div class="swiper-slide gallery-wrapper">
@@ -339,6 +309,7 @@
               <img src="./images/gallery.png" alt="">
             </div>
           </div>
+          <div class="swiper-pagination gallery-pagination"></div>
         </div>
         <div class="mt-60 text-center">
           <a href="#" class="primary-button">
@@ -349,9 +320,12 @@
     </section>
     <section class="newsletter">
       <div class="container spacer-y">
-        <h2 class="text-center">Sign-up to receive the<br>
+        <h2 class="text-lg-center">Sign-up to receive the<br>
           latest updates</h2>
-        <form action="" method="post" class="newsletter-form mt-5">
+        <p class="bottom-text para-text text-lg-center">
+          Subscribe to our newsletter to get the latest articles and exclusive news
+        </p>
+        <form action="" method="post" class="newsletter-form mt-lg-5">
           <div class="row justify-content-center g-0">
             <div class="col-lg-5 position-relative">
               <input type="email" class="form-control" placeholder="Email Address">
@@ -366,10 +340,16 @@
     <div class="container spacer-y">
       <div class="footer-row">
         <div class="footer-col">
-          <img src="./images/nzuko_white.svg" alt="">
+          <img src="./images/nzuko_white.png" alt="">
           <p class="para-text mt-3 mb-0">
             We write articles, create mini docs and take photographs showcasing Igbo (Nigerian) content. Much of it discusses history, though we are planning to do more.
           </p>
+          <ul class="footer_socials social-icons">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+          </ul>
         </div>
         <div class="footer-col">
           <p class="footer-heading">Quick Links</p>

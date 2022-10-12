@@ -71,4 +71,21 @@ var gallerySwiper = new Swiper('.gallery-slide', {
     nextEl: '.gallery-next',
     prevEl: '.gallery-prev',
   },
+  pagination: {
+    el: ".gallery-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
 });

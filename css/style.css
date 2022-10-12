@@ -9,6 +9,10 @@
     --yellownz: #FFE01B;
     --lightbg: #FAFAFA;
 
+    --body-colorsm: #FBFDFE;
+    --news-colorsm: #F6F8F9;
+    --copy-colorsm: #4D524B;
+
     /* gradients */
     --gray-grad: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
     --black-grad: linear-gradient(284.01deg, #1A1E21 6.36%, #1A1E21 68.16%, rgba(45, 49, 51, 0.92) 83.98%, #3F4245 101.28%);
@@ -105,6 +109,11 @@ ul {
 .button-group {
     display: flex;
     gap: 15px;
+}
+.hero .hero-left {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.2);
 }
 .hero .slider-button {
     height: 60px;
@@ -432,9 +441,16 @@ section.bg-yellow .slider-button:hover svg {
 .gallery-wrapper img {
     width: 100%;
 }
+.gallery-pagination {
+    display: none;
+}
+.newsletter-form .form-control {
+    padding: 0 60px 0 0;
+}
 .newsletter-form button {
     position: absolute;
-    top: 5px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     border: none;
     height: 40px;
@@ -454,6 +470,12 @@ section.bg-yellow .slider-button:hover svg {
 }
 .footer-col:first-child {
     flex: 0 0 34%;
+}
+.footer-col:first-child img {
+    height: 50px;
+}
+.footer_socials {
+    display: none;
 }
 .footer-col {
     flex: 0 0 22%;
@@ -490,3 +512,203 @@ section.bg-yellow .slider-button:hover svg {
     justify-content: flex-end;
 }
 /* footer ends */
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: var(--body-colorsm);
+    }
+    .section-heading-row .col-lg-4 {
+        display: none;
+    }
+    /* utils */
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29.3px;
+        font-style: normal;
+    }
+    .bottom-text {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .hero-heading {
+        font-size: 38px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .spacer-y {
+        padding: 40px 16px;
+    }
+    .mt-60 {
+        margin-top: 20px;
+    }
+    .primary-button,
+    .secondary-button {
+        font-size: 16px;
+        padding: 13px 46px;
+    }
+    /* utils ends */
+    /* index */
+    .hero {
+        border-bottom: 1px solid rgba(18, 18, 18, 0.2);
+    }
+    .hero .hero-left {
+        display: block;
+        border: none;
+    }
+    .content-wrapper {
+        padding: 0;
+    }
+    .content-wrapper p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        margin: 20px 0;
+        color: var(--para-color);
+    }
+    .oval-circle::after {
+        background-image: url(../images/circle-draw-sm.svg);
+        top: -5px;
+        left: -7px;
+        height: 125%;
+        width: 125%;
+    }
+    .slider-wrapper .button-group {
+        justify-content: center;
+        margin-top: 30px;
+        position: relative;
+        bottom: unset;
+        right: unset;
+    }
+    .hero .slider-button {
+        width: 45px;
+        height: 45px;
+        border: 1px solid var(--primary-color);
+    }
+    .hero .slider-button img {
+        width: 20px;
+    }
+    .hero .slider-button:hover {
+        border: 1px solid var(--yellownz);
+    }
+    .story-card .story-text {
+        bottom: 9px;
+        left: 9px;
+    }
+    .story-card .story-text h4 {
+        font-size: 16px;
+        line-height: 19.53px;
+    }
+    .story-card .story-text p {
+        font-size: 12px;
+        line-height: 15.12px;
+    }
+    .video-slider {
+        width: 285px !important;
+    }
+    .video-slider .play-button img {
+        width: 60px;
+    }
+    .video-slider.swiper-slide-active .video-name {
+        padding: 0;
+        border: 0;
+        backdrop-filter: unset;
+        background-color: transparent;
+    }
+    .video-slider .video-name {
+        text-align: left;
+    }
+
+    .gallery-wrapper .gallery-name h5 {
+        font-size: 16px;
+    }
+    .gallery-pagination {
+        display: block;
+        position: relative !important;
+        bottom: 0 !important;
+    }
+    .gallery-pagination .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: var(--primary-color);
+        opacity: 0.2;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    .gallery-pagination .swiper-pagination-bullet-active {
+        width: 20px;
+        opacity: 1;
+    }
+    .newsletter {
+        background-color: var(--news-colorsm);
+    }
+    .newsletter .spacer-y {
+        padding-bottom: 0;
+    }
+    .newsletter-form {
+        position: relative;
+        margin-bottom: -33px;
+    }
+    .newsletter-form .form-control {
+        height: 66px;
+        padding: 24px 65.5px 24px 25px;
+        background-color: var(--news-colorsm);
+        border: none;
+        box-shadow: 0px 67.1144px 109.061px rgba(0, 0, 0, 0.6);
+    }
+    .newsletter-form button {
+        width: 52px;
+        height: 50px;
+        right: 8.5px;
+    }
+    /* index ends */
+    /* footer */
+    .footer .spacer-y {
+        padding: 73px 16px 40px 16px;
+    }
+    .footer-col:first-child,
+    .footer-col {
+        flex: 0 0 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .footer-col:last-child {
+        margin-bottom: 0;
+    }
+    .footer-col:first-child img {
+        height: 30px;
+    }
+    .footer_socials {
+        margin-top: 20px;
+        gap: 10px !important;
+        display: flex;
+    }
+    .footer_socials a {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--whitenz);
+    }
+    .copyright {
+        text-align: center;
+        border: none;
+        background-color: var(--copy-colorsm);
+    }
+    .copyright .social-icons a  {
+        display: none;
+    }
+    .copyright-row {
+        padding: 16px 0 !important;
+    }
+    .copyright-row .cp-left, 
+    .copyright-row .cp-right {
+        flex: 0 0 100%;
+    }
+    .copyright-row .cp-right {
+        display: none;
+    }
+    
+    /* footer ends */
+}

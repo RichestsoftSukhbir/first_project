@@ -1,6 +1,15 @@
 .navbg {
     background-color: var(--lightbg);
 }
+.header {
+    position: relative;
+    z-index: 9;
+}
+.menu-active {
+    /* display: block !important; */
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 /* header starts */
 /* top heading */
 
@@ -60,6 +69,31 @@
 .item-right .search {
     cursor: pointer;
 }
+.item-right .hamburger {
+    position: relative;
+    height: 18px;
+    width: 23px;
+    border: 1px solid transparent;
+}
+.item-right .hamburger span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    height: 2.5px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+.item-right .hamburger span:nth-child(1) {
+    top: 0;
+    width: 12px;
+}
+.item-right .hamburger span:nth-child(3) {
+    top: 100%;
+    width: 16px;
+}
 
 /* navbar starts ends */
 /* bottom navbar */
@@ -88,3 +122,76 @@
 }
 /* bottom navbar ends */
 /* header ends */
+@media (min-width: 320px) and (max-width: 480px) {
+    .top-heading p {
+        letter-spacing: 0;
+        font-size: 10px;
+        line-height: 12.6px;
+    }
+    .item-center .logo {
+        height: 100%;
+        width: 108px;
+    }
+}
+@media (max-width: 992px){
+    .header {
+        position: sticky;
+        top: 0;
+    }
+    .navbg {
+        background-color: var(--whitenz);
+    }
+    .navigation {
+        padding: 18px 16px;
+    }
+    .navigation .item-left {
+        display: none;
+        flex: 0 0 0%;
+    }
+    .navigation .item-center,
+    .navigation .item-right {
+        flex: 0 0 50%;
+    }
+    .navigation .item-center {
+        justify-content: flex-start;
+    }
+    .item-right div:not(.hamburger),
+    .item-right a {
+        display: none;
+    }
+    .navbar-bottom {
+        position: relative;
+    }
+    .menu {
+        padding: 0;
+    }
+    .menu .main-menu {
+        display: block;
+        position: fixed;
+        /* top: 0; */
+        width: 100%;
+        background-color: var(--whitenz);
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+    }
+    .menu .main-menu.menu-active {
+        transform: translateX(0%);
+    }
+    .main-menu .nav-link {
+        padding: 10px 16px;
+        display: block;
+        border-right: none;
+        border-bottom: 1px solid rgba(18,18,18,0.1);
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+@media (min-width: 992px){
+    .hamburger {
+        display: none;
+    }
+}
