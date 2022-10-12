@@ -671,11 +671,20 @@ section.bg-yellow .slider-button:hover svg {
         padding: 0;
         margin-bottom: 40px;
     }
+    .footer-col {
+        flex: 0 0 50%;
+    }
     .footer-col:last-child {
+        flex: 0 0 100%;
         margin-bottom: 0;
     }
     .footer-col:first-child img {
         height: 30px;
+    }
+    .footer-list a {
+        font-size: 12px;
+        line-height: 25px;
+        margin-bottom: unset;
     }
     .footer_socials {
         margin-top: 20px;
