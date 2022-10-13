@@ -66,12 +66,24 @@
     <div class="navbar-bottom navbg">
       <nav class="container menu">
         <ul class="main-menu">
+          <li class="mobile-list">
+            <form action="" method="get" class="search-form position-relative">
+              <input type="search" class="form-control" name="search" placeholder="Search here">
+              <button type="submit" class="button-reset">
+                <img src="./images/icons/search.svg" alt="">
+              </button>
+            </form>
+          </li>
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#" class="nav-link">About Us</a></li>
           <li><a href="#" class="nav-link">Articles</a></li>
           <li><a href="#" class="nav-link">Videos</a></li>
           <li><a href="#" class="nav-link">Gallery</a></li>
           <li><a href="#" class="nav-link">Shop</a></li>
+          <li class="mobile-list">
+            <a href="#" class="primary-button">Sign Up</a>
+            <a href="#" class="secondary-button">Log In</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -79,8 +91,8 @@
   <main>
     <section class="hero">
       <div class="container-fluid spacer-y p-lg-0">
-        <div class="row g-lg-0 g-4">
-          <div class="col-lg-6 hero-left">
+        <div class="row g-4 g-sm-5 g-md-3 g-lg-0 hero-row">
+          <div class="col-lg-6 col-md-6 hero-left">
             <div class="content-wrapper">
               <h1 class="hero-heading">Global <span class="oval-circle">Igbo</span><br> Stories & Research</h1>
               <p>
@@ -92,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="swiper slider-wrapper">
               <div class="swiper-wrapper single-item">
                 <div class="swiper-slide">
@@ -160,14 +172,14 @@
     </section>
     <section class="highlights bg-yellow">
       <div class="container spacer-y">
-        <div class="heading-row text-lg-center">
+        <div class="heading-row text-md-center">
           <h2>Our Highlight Stories</h2>
           <h6 class="bottom-text">Discover the selection of the most popular stories</h6>
         </div>
         <div class="row g-3 mt-60">
-          <div class="col-lg-6 order-2 order-lg-1">
+          <div class="col-md-6 order-2 order-md-1">
             <div class="row g-3">
-              <div class="col-lg-12 col-6">
+              <div class="col-md-12 col-6">
                 <a href="#" class="story-card text-white">
                   <div class="story-text">
                     <h4 class="fw-bold">Eze Agwu</h4>
@@ -176,7 +188,7 @@
                   <img src="./images/story_1.png" alt="">
                 </a>
               </div>
-              <div class="col-lg-12 col-6">
+              <div class="col-md-12 col-6">
                 <a href="#" class="story-card text-white">
                   <div class="story-text">
                     <h4 class="fw-bold">Onye Ije, The Traveler</h4>
@@ -187,7 +199,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
+          <div class="col-md-6 order-1 order-md-2">
             <a href="#" class="story-card text-white">
               <div class="story-text">
                 <h4 class="fw-bold">Ahebi Ugbabe</h4>
@@ -320,15 +332,15 @@
     </section>
     <section class="newsletter">
       <div class="container spacer-y">
-        <h2 class="text-lg-center">Sign-up to receive the<br>
+        <h2 class="text-md-center">Sign-up to receive the<br>
           latest updates</h2>
-        <p class="bottom-text para-text text-lg-center">
+        <p class="bottom-text para-text text-md-center">
           Subscribe to our newsletter to get the latest articles and exclusive news
         </p>
         <form action="" method="post" class="newsletter-form mt-lg-5">
           <div class="row justify-content-center g-0">
-            <div class="col-lg-5 position-relative">
-              <input type="email" class="form-control" placeholder="Email Address">
+            <div class="col-lg-5 col-md-8 position-relative">
+              <input type="email" name="newsletter" id="newsletter" class="form-control" placeholder="Enter your email address">
               <button type="submit" class="bg-yellow"><img src="./images/icons/arrow-right.svg" alt=""></button>
             </div>
           </div>
