@@ -516,6 +516,8 @@ section.bg-yellow .slider-button:hover svg {
     justify-content: flex-end;
 }
 /* footer ends */
+
+
 @media (min-width: 320px) and (max-width: 480px) {
     body {
         background-color: var(--body-colorsm);
@@ -625,6 +627,9 @@ section.bg-yellow .slider-button:hover svg {
     .gallery-wrapper .gallery-name h5 {
         font-size: 16px;
     }
+    .gallery-spacer.spacer-y {
+        padding: 0;
+    }
     .gallery-pagination {
         display: block;
         position: relative !important;
@@ -731,6 +736,46 @@ section.bg-yellow .slider-button:hover svg {
     
     /* footer ends */
 }
+
+@media (min-width:576px) {
+    .mob-blog-wraper,
+    .mob-video-wraper{
+        display: none;
+    }
+
+    .video-thumb {
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .desk-blog-wraper,
+    .desktop-video-wraper{
+        display: block;
+    }
+}
+
+@media (max-width:576px) {
+    .video-thumb {
+        height: 420px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .mob-blog-wraper .video-slider,
+    .mob-video-wraper .video-slider {
+        width: 85% !important;
+    }
+
+    .mob-blog-wraper,
+    .mob-video-wraper{
+        display: block;
+    }
+    .desk-blog-wraper,
+    .desktop-video-wraper{
+        display: none;
+    }
+}
+
 @media (min-width: 480px) and (max-width: 576px) {
     body {
         background-color: var(--body-colorsm);
@@ -840,6 +885,9 @@ section.bg-yellow .slider-button:hover svg {
 
     .gallery-wrapper .gallery-name h5 {
         font-size: 20px;
+    }
+    .gallery-spacer.spacer-y {
+        padding: 0;
     }
     .gallery-pagination {
         display: block;
@@ -1167,7 +1215,7 @@ section.bg-yellow .slider-button:hover svg {
     
     /* footer ends */
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
     body {
         background-color: var(--body-colorsm);
     }
@@ -1179,8 +1227,8 @@ section.bg-yellow .slider-button:hover svg {
     }
     /* utils */
     h2 {
-        font-weight: 700;
-        font-size: 37px;
+        /* font-weight: 700; */
+        font-size: 47px;
         line-height: 42px;
         font-style: normal;
     }
@@ -1197,7 +1245,7 @@ section.bg-yellow .slider-button:hover svg {
         font-weight: 700;
     }
     .spacer-y {
-        padding: 55px 50px !important;
+        padding: 55px 50px;
     }
     .mt-60 {
         margin-top: 40px;
@@ -1335,19 +1383,15 @@ section.bg-yellow .slider-button:hover svg {
     .footer .spacer-y {
         padding: 73px 50px 50px !important;
     }
-    .footer-col:first-child,
-    .footer-col {
-        flex: 0 0 100%;
-        margin-bottom: 50px;
+    .footer-col:first-child {
+        flex: 0 0 34%;
     }
     .footer-col {
-        flex: 0 0 33.33%;
-        padding: 0;
+        flex: 0 0 22%;
+    }
+    .footer-col {
+        padding-right: 30px;
         margin-bottom: 0px;
-    }
-    .footer-col:last-child {
-        flex: 0 0 33.33%;
-        margin-bottom: 0;
     }
     .footer-col:first-child img {
         height: 30px;
@@ -1358,41 +1402,21 @@ section.bg-yellow .slider-button:hover svg {
         margin-bottom: unset;
     }
     .footer_socials {
-        margin-top: 20px;
-        gap: 10px !important;
-        display: flex;
-    }
-    .footer_socials a {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--whitenz);
+        display: none !important;
     }
     .copyright {
-        text-align: center;
-        border: none;
-        background-color: var(--copy-colorsm);
+        padding: 0 50px;
     }
     .copyright p {
         line-height: 1;
-    }
-    .copyright .social-icons a  {
-        display: none;
     }
     .copyright-row {
         padding: 16px 0 !important;
     }
     .copyright-row .cp-left, 
     .copyright-row .cp-right {
-        flex: 0 0 100%;
+        flex: 0 0 50%;
     }
-    .copyright-row .cp-right {
-        display: none;
-    }
-    
     /* footer ends */
 }
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -1422,4 +1446,9 @@ section.bg-yellow .slider-button:hover svg {
     .content-wrapper {
         padding-left: calc(100% - 660px);
     }
+}
+
+
+.swiper-cards {
+    overflow: hidden !important;
 }

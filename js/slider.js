@@ -18,7 +18,7 @@ var singleSwiper = new Swiper('.slider-wrapper', {
     prevEl: '.prev',
   },
 });
-var mySwiper = new Swiper('.video-wrapper', {
+var mySwiper = new Swiper('.desktop-video-wraper', {
   loop: true,
   speed: 1000,
   autoplay: {
@@ -31,7 +31,7 @@ var mySwiper = new Swiper('.video-wrapper', {
   coverflowEffect: {
     rotate: 0,
     stretch: 80,
-    depth: 200,
+    depth: 100,
     modifier: 1,
     slideShadows: false,
   },
@@ -40,7 +40,24 @@ var mySwiper = new Swiper('.video-wrapper', {
     prevEl: '.video-prev',
   },
 });
-var mySwiper = new Swiper('.blog-wrapper', {
+
+var mySwiper = new Swiper('.mob-video-wraper', {
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+  },
+  effect: 'cards',
+  grabCursor: true,
+  slidesPerView: "auto",
+  cardsEffect: {
+    rotate: 0,
+    perSlideOffset: 13.2
+  }
+});
+
+
+var mySwiper = new Swiper('.desk-blog-wraper', {
   loop: true,
   speed: 1000,
   autoplay: {
@@ -53,7 +70,7 @@ var mySwiper = new Swiper('.blog-wrapper', {
   coverflowEffect: {
     rotate: 0,
     stretch: 80,
-    depth: 200,
+    depth: 100,
     modifier: 1,
     slideShadows: false,
   },
@@ -62,6 +79,22 @@ var mySwiper = new Swiper('.blog-wrapper', {
     prevEl: '.blog-prev',
   },
 });
+
+var mySwiper = new Swiper('.mob-blog-wraper', {
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+  },
+  effect: 'cards',
+  grabCursor: true,
+  slidesPerView: "auto",
+  cardsEffect: {
+    rotate: 0,
+    perSlideOffset: 13.2
+  }
+});
+
 var gallerySwiper = new Swiper('.gallery-slide', {
   loop: true,
   slidesPerView: 3,
@@ -77,7 +110,8 @@ var gallerySwiper = new Swiper('.gallery-slide', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.1,
+      spaceBetween: 10,
     },
     576: {
       slidesPerView: 2,
