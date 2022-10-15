@@ -1,7 +1,3 @@
-new CircleType(document.querySelector('.curve-text'))
-  .radius(60);
-
-// get year using js?
 document.querySelector(".year").innerHTML = new Date().getFullYear();
 
 let ham = document.querySelector('.hamburger');
@@ -15,3 +11,6 @@ function toggleMenu() {
   menu.classList.toggle('menu-active');
   ham.classList.toggle('ham-active');
 }
+
+new CircleType(document.querySelector('.curve-text'))
+  .radius(60);
