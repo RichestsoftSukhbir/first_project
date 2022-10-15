@@ -67,6 +67,7 @@ p {
 a {
     text-decoration: none;
     color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 a:hover {
     color: var(--primary-color);
@@ -113,6 +114,12 @@ ul {
 .button-group {
     display: flex;
     gap: 15px;
+}
+.theme-link {
+    color: var(--whitenz);
+}
+.theme-link:hover {
+    color: var(--yellownz);
 }
 .hero .hero-left {
     display: flex;
@@ -189,11 +196,17 @@ section.bg-yellow .slider-button:hover svg {
     position: relative;
 }
 .content-wrapper {
-    padding: 0 20px 0 100px;
+    padding: 0 45px 0 100px;
+}
+.content-wrapper .primary-button:hover {
+    color: var(--primary-color);
+    background-color: var(--yellownz);
+    border: 1px solid var(--yellownz);
+    box-shadow: 0px 3px 0px 0px var(--primary-color);
 }
 .hero-heading {
-    font-size: 99px;
-    line-height: 92px;
+    font-size: 90px;
+    line-height:85px;
     text-transform: uppercase;
 }
 .oval-circle {
@@ -204,13 +217,14 @@ section.bg-yellow .slider-button:hover svg {
     content: '';
     position: absolute;
     z-index: -1;
-    top: -60px;
-    left: -80px;
+    top: -45px;
+    left: -85px;
     height: 170%;
     width: 200%;
     background-image: url(../images/circle-draw.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 245px;
 }
 .content-wrapper p {
     font-size: 18px;
@@ -316,7 +330,6 @@ section.bg-yellow .slider-button:hover svg {
     line-height: 1;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 700;
     font-family: var(--calibiri);
     letter-spacing: 1px;
     width: calc(100% - 40px);
@@ -326,6 +339,7 @@ section.bg-yellow .slider-button:hover svg {
     transition: all 0.3s ease;
 }
 .video-slider.swiper-slide-active .video-name {
+    font-weight: 700;
     padding: 24px 20px;
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -407,6 +421,13 @@ section.bg-yellow .slider-button:hover svg {
 .gallery-wrapper {
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+}
+.gallery-wrapper img {
+    transition: all 0.3s ease;
+}
+.gallery-wrapper:hover img {
+    scale: 1.05;
 }
 .story-card:hover::after,
 .story-card:hover .story-text,
@@ -462,9 +483,18 @@ section.bg-yellow .slider-button:hover svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--yellownz);
+    transition: all 0.3s ease;
 }
-.newsletter-form button img {
+.newsletter-form button svg {
     width: 25px;
+    fill: var(--primary-color);
+}
+.newsletter-form button:hover {
+    background-color: var(--primary-color);
+}
+.newsletter-form button:hover svg {
+    fill: var(--yellownz) !important;
 }
 /* index ends */
 /* footer starts */
@@ -496,6 +526,10 @@ section.bg-yellow .slider-button:hover svg {
     font-family: var(--jakarta);
     color: var(--para-color);
     margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.footer-list a:hover {
+    color: var(--yellownz);
 }
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -532,9 +566,12 @@ section.bg-yellow .slider-button:hover svg {
         line-height: 29.3px;
         font-style: normal;
     }
+    p {
+        font-size: 14px;
+    }
     .bottom-text {
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 26px;
     }
     .hero-heading {
         font-size: 38px;
@@ -566,8 +603,8 @@ section.bg-yellow .slider-button:hover svg {
     }
     .content-wrapper p {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 26px;
         margin: 20px 0;
         color: var(--para-color);
     }
@@ -577,6 +614,7 @@ section.bg-yellow .slider-button:hover svg {
         left: -7px;
         height: 125%;
         width: 125%;
+        background-size: unset;
     }
     .slider-wrapper .button-group {
         justify-content: center;
@@ -667,7 +705,7 @@ section.bg-yellow .slider-button:hover svg {
     .newsletter-form .form-control::placeholder {
         font-size: 14px;
     }
-    .newsletter-form button {
+    .newsletter-form .news-button {
         width: 52px;
         height: 50px;
         right: 8.5px;
@@ -694,7 +732,7 @@ section.bg-yellow .slider-button:hover svg {
         height: 30px;
     }
     .footer-list a {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 25px;
         margin-bottom: unset;
     }

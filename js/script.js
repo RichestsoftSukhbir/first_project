@@ -13,4 +13,5 @@ ham.addEventListener('click', ()=> {
 
 function toggleMenu() {
   menu.classList.toggle('menu-active');
+  ham.classList.toggle('ham-active');
 }

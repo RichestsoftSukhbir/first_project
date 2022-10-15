@@ -65,6 +65,7 @@
 }
 .item-center .logo {
     height: 40px;
+    object-fit: contain;
 }
 .item-right .search {
     cursor: pointer;
@@ -86,6 +87,7 @@
     width: 100%;
     border-radius: 10px;
     background-color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 .item-right .hamburger span:nth-child(1) {
     top: 0;
@@ -95,7 +97,22 @@
     top: 100%;
     width: 16px;
 }
-
+.hamburger.ham-active span:nth-child(1),
+.hamburger.ham-active span:nth-child(3) {
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    transform-origin: center;
+}
+.hamburger.ham-active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.hamburger.ham-active span:nth-child(2) {
+    width: 0;
+}
+.hamburger.ham-active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
 /* navbar starts ends */
 /* bottom navbar */
 .menu {
@@ -194,6 +211,7 @@
         border-right: none;
         padding: 0;
     }
+    .main-menu .nav-link.active,
     .main-menu .nav-link:hover {
         outline: unset;
         border-right: unset;
