@@ -781,25 +781,29 @@ section.bg-yellow .slider-button:hover svg {
 .filter .filter-list.active {
     border-bottom: 2px solid var(--primary-color);
 }
-.gallery-row .image-wrapper {
+.image-wrapper {
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
-.gallery-row .gallery-image {
+.gallery-image {
     width: 100%;
     height: fit-content;
 }
-.gallery-row .gallery-image img {
+.gallery-image .image-wrapper > img {
     mix-blend-mode: luminosity;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-.gallery-row .gallery-image:hover img {
+.gallery-image:hover img {
     mix-blend-mode: normal;
 }
 .gallery-text {
     position: absolute;
     z-index: 2;
     bottom: -100%;
+    width: 100%;
     background-color: var(--yellownz);
     padding: 10px 15px;
     transition: all 0.3s ease;
@@ -824,6 +828,14 @@ section.bg-yellow .slider-button:hover svg {
 }
 .load-more:hover svg {
     fill: var(--whitenz);
+}
+
+.gall-row {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
+}
+.gall-row .col .gallery-image:nth-child(1) {
+    margin-bottom: 30px;
 }
 /* gallery ends */
 /* map */
@@ -857,7 +869,116 @@ section.bg-yellow .slider-button:hover svg {
     padding-left: 1px;
     height: 20px;
     background-color: rgba(18, 18, 18, 0.1);
-    
+}
+.map-left,
+.map-right {
+    position: relative;
+}
+.map-point {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+.map-point .location-dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--whitenz);
+    border-radius: 50%;
+    filter: blur(1.5px);
+    transition: all 0.3s ease;
+}
+.map-point .location-dot.active-loc {
+    transform: scale(1.5);
+}
+.point-one {
+    top: 124.66px;
+    left: 122px;
+}
+.point-two {
+    top: 250.66px;
+    left: 93px;
+}
+.point-three {
+    top: 268.66px;
+    left: 182px;
+}
+.point-four {
+    bottom: 217.51px;
+    left: 112px;
+}
+.point-five {
+    bottom: 145.51px;
+    left: 172px;
+}
+.point-six {
+    top: 177.66px;
+    right: 179.19px;
+}
+.point-seven {
+    bottom: 273.51px;
+    right: 199.19px;
+}
+.point-eight {
+    top: 89px;
+    left: 120.62px;
+}
+.point-nine {
+    bottom: 239.61px;
+    left: 86.62px;
+}
+.point-ten {
+    top: 153px;
+    right: 301.6px;
+}
+.point-eleven {
+    top: 89px;
+    right: 133.6px;
+}
+.point-twelve {
+    bottom: 112.61px;
+    left: 236.62px;
+}
+.point-thirteen {
+    top: 229px;
+    left: 228.62px;
+}
+.location-detais {
+    width: 168px;
+    background-color: var(--whitenz);
+    padding: 10px;
+}
+.location-detais .loc-head {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.loc-head .location-image {
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+}
+.loc-head .location-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.loc-head .location-name p {
+    font-size: 14px;
+    line-height: 17.09px;
+    margin: 0;
+    font-family: var(--calibiri);
+}
+.loc-body .loc-para p {
+    font-size: 10px;
+    line-height: 15px;
+}
+.loc-body button {
+    display: flex;
+    margin-left: auto;
+}
+.loc-body button img {
+    width: 15.29px;
 }
 /* map ends */
 /* footer starts */
@@ -1155,6 +1276,14 @@ section.bg-yellow .slider-button:hover svg {
         height: 400px;
         width: 100%;
         object-fit: cover;
+    }
+
+    .gall-row {
+        --bs-gutter-x: 16px;
+        --bs-gutter-y: 16px;
+    }
+    .gall-row .col .gallery-image:nth-child(1) {
+        margin-bottom: 16px;
     }
     /* gallery ends */
     /* footer */
@@ -1802,6 +1931,17 @@ section.bg-yellow .slider-button:hover svg {
         width: 100%;
         object-fit: cover;
     }
+
+    .gall-row {
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 20px;
+    }
+    .gall-row .col .gallery-image:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .image-wrapper .gallery-text h4 {
+        font-size: 14px;
+    }
     /* gallery ends */
     /* footer */
     .footer .spacer-y {
@@ -2120,6 +2260,9 @@ section.bg-yellow .slider-button:hover svg {
         height: 400px;
         width: 100%;
         object-fit: cover;
+    }
+    .image-wrapper .gallery-text h4 {
+        font-size: 16px;
     }
     /* gallery ends */
     /* footer */
