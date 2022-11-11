@@ -100,6 +100,7 @@ var gallerySwiper = new Swiper('.gallery-slide', {
   slidesPerView: 3,
   spaceBetween: 30,
   speed: 1000,
+  grabCursor: true,
   navigation: {
     nextEl: '.gallery-next',
     prevEl: '.gallery-prev',
@@ -128,6 +129,11 @@ var artileSwiper = new Swiper('.article-slider', {
   loop: true,
   slidesPerView: 1.3,
   spaceBetween: 30,
+  grabCursor: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.2,
@@ -152,12 +158,38 @@ var artileSwiper = new Swiper('.article-slider', {
   }
 });
 
+var gallerySwiper = new Swiper('.trans-slider', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  speed: 1000,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.trans-next',
+    prevEl: '.trans-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
+
 artileSwiper.on('slideChange', function () {
   realIndex(this);
 });
 
 function realIndex(data) {
-  if((data.realIndex + 1) <= 9) {
+  if ((data.realIndex + 1) <= 9) {
     document.querySelector('.current-index').innerText = "0" + (data.realIndex + 1);
   } else {
     document.querySelector('.current-index').innerText = (data.realIndex + 1);
@@ -166,7 +198,7 @@ function realIndex(data) {
 $('.total-index').text(totalIndex());
 
 function totalIndex() {
-  if(($('.article-slide:not(.swiper-slide-duplicate)').length) <= 9) {
+  if (($('.article-slide:not(.swiper-slide-duplicate)').length) <= 9) {
     $('.total-index').text("0" + ($('.article-slide:not(.swiper-slide-duplicate)').length));
   } else {
     $('.total-index').text($('.article-slide:not(.swiper-slide-duplicate)').length);

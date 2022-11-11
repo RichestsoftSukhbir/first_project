@@ -34,7 +34,18 @@
 </head>
 
 <body>
-
+  <div class="search-popup">
+    <div class="container">
+      <form action="" method="get" class="search-form position-relative">
+        <input type="search" class="form-control" name="" id="">
+        <button type="submit" class="button-reset"><img src="./images/icons/search.svg" alt=""></button>
+      </form>
+    </div>
+    <div class="close-popup">
+      <i class="fa-light fa-xmark"></i>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
   <header class="header">
     <section class="top-heading">
       <p class="m-0">Curated Stories and Research on the Global Igbo Experience</p>
@@ -58,8 +69,8 @@
           <div class="search">
             <img src="./images/icons/search.svg" alt="">
           </div>
-          <a href="#" class="primary-button">Sign Up</a>
-          <a href="#" class="secondary-button">Log In</a>
+          <a href="./signup.html" class="primary-button">Sign Up</a>
+          <a href="./login.html" class="secondary-button">Log In</a>
           <div class="hamburger">
             <span></span>
             <span></span>
@@ -84,10 +95,11 @@
           <li><a href="./article.html" class="nav-link">Articles</a></li>
           <li><a href="./video.html" class="nav-link">Videos</a></li>
           <li><a href="./gallery.html" class="nav-link">Gallery</a></li>
-          <li><a href="#" class="nav-link">Shop</a></li>
+          <li><a href="./translations-database.html" class="nav-link">Translations Database</a></li>
+          <li><a href="./map.html" class="nav-link">Map</a></li>
           <li class="mobile-list">
-            <a href="#" class="primary-button">Sign Up</a>
-            <a href="#" class="secondary-button">Log In</a>
+            <a href="./signup.html" class="primary-button">Sign Up</a>
+            <a href="./login.html" class="secondary-button">Log In</a>
           </li>
         </ul>
       </nav>
@@ -104,7 +116,8 @@
         </p>
        </div>
     </section>
-    <section class="map-section bg-yellow">
+
+    <!-- <section class="map-section bg-yellow">
         <div class="container spacer-y">
             <div class="row g-3">
                 <div class="col-lg-5">
@@ -118,27 +131,6 @@
                         <li class="map-point point-six"><div class="location-dot"></div></li>
                         <li class="map-point point-seven"><div class="location-dot"></div></li>
                       </ul>
-                      <!-- <button class="map-point point-one button-reset">
-                        <div class="location-dot"></div>
-                      </button>
-                      <button class="map-point point-two button-reset">
-                        <div class="location-dot"></div>
-                      </button>
-                      <button class="map-point point-three button-reset">
-                        <div class="location-dot"></div>
-                      </button>
-                      <button class="map-point point-four button-reset">
-                        <div class="location-dot"></div>
-                      </button>
-                      <button class="map-point point-five button-reset">
-                        <div class="location-dot"></div>
-                      </button>
-                      <button class="map-point point-six button-reset">
-                        <div class="location-dot"></div>
-                      </button>
-                      <button class="map-point point-seven button-reset">
-                        <div class="location-dot"></div>
-                      </button> -->
                       <img src="./images/map-left.svg" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -186,31 +178,54 @@
                 <li class="map-list"><p>Shagamu, Nigeria</p></li>
             </ul>
         </div>
-    </section>
-    <section class="newsletter">
+    </section> -->
+    
+    <section class="map-section bg-yellow">
       <div class="container spacer-y">
-        <h2 class="text-md-center">Sign-up to receive the<br>
-          latest updates</h2>
-        <p class="bottom-text para-text text-md-center">
-          Subscribe to our newsletter to get the latest articles and exclusive news
-        </p>
-        <form action="" method="post" class="newsletter-form mt-lg-5">
-          <div class="row justify-content-center g-0">
-            <div class="col-lg-5 col-md-8 position-relative">
-              <input type="email" name="newsletter" id="newsletter" class="form-control"
-                placeholder="Enter your email address">
-              <button type="submit" class="news-button">
-                <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M17.3654 0.00120769C16.8275 0.0274252 16.4132 0.473749 16.4401 0.9981C16.5638 3.40975 17.9363 7.77723 22.0688 10.33H0.916588C0.410435 10.33 0.000118256 10.7299 0.000118256 11.2233C0.000118256 11.7166 0.410435 12.1165 0.916584 12.1165H21.6731C19.0757 13.6844 16.65 16.4148 15.9904 20.9148C15.9142 21.4346 16.2848 21.9161 16.818 21.9903C17.3512 22.0646 17.8452 21.7034 17.9214 21.1837C18.9286 14.3119 24.734 12.3165 27.5272 12.1735C27.6137 12.1709 27.698 12.157 27.7783 12.1332C27.9206 12.0913 28.0486 12.0187 28.1547 11.9237C28.2588 11.8307 28.3427 11.7154 28.3978 11.5841C28.4395 11.4853 28.4645 11.3784 28.4696 11.2669C28.475 11.1554 28.4602 11.0468 28.428 10.9447C28.343 10.6748 28.1367 10.4509 27.8629 10.3425C27.785 10.3116 27.7023 10.2902 27.6163 10.2799C20.5655 9.2895 18.5274 3.61713 18.3882 0.903158C18.3613 0.378807 17.9034 -0.0250098 17.3654 0.00120769Z" />
-                </svg>
-              </button>
-            </div>
+        <div class="row">
+          <div class="col-lg-9">
+            <img src="./images/map.svg" class="img-fluid" alt="">
           </div>
-        </form>
+          <div class="col-lg-3">
+            <ul class="map-button-list">
+              <li class="mb-30"><a href="#" class="primary-button text-center">Akwa Ibom</a></li>
+              <li class="mb-30"><a href="#" class="primary-button text-center">Benue</a></li>
+              <li class="mb-30"><a href="#" class="primary-button text-center">Cross River</a></li>
+              <li class="mb-30"><a href="#" class="primary-button text-center">Delta</a></li>
+              <li class="mb-30"><a href="#" class="primary-button text-center">Kogi</a></li>
+              <li class="mb-30"><a href="#" class="primary-button text-center">Rivers</a></li>
+              <li class="mb-30"><a href="#" class="primary-button text-center">Diaspora</a></li>
+              <li><a href="#" class="primary-button text-center">Nigeria</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
+    
   </main>
+  <section class="newsletter">
+    <div class="container spacer-y">
+      <h2 class="text-md-center">Sign-up to receive the<br>
+        latest updates</h2>
+      <p class="bottom-text para-text text-md-center">
+        Subscribe to our newsletter to get the latest articles and exclusive news
+      </p>
+      <form action="" method="post" class="newsletter-form mt-lg-5">
+        <div class="row justify-content-center g-0">
+          <div class="col-lg-5 col-md-8 position-relative">
+            <input type="email" name="newsletter" id="newsletter" class="form-control"
+              placeholder="Enter your email address">
+            <button type="submit" class="news-button">
+              <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17.3654 0.00120769C16.8275 0.0274252 16.4132 0.473749 16.4401 0.9981C16.5638 3.40975 17.9363 7.77723 22.0688 10.33H0.916588C0.410435 10.33 0.000118256 10.7299 0.000118256 11.2233C0.000118256 11.7166 0.410435 12.1165 0.916584 12.1165H21.6731C19.0757 13.6844 16.65 16.4148 15.9904 20.9148C15.9142 21.4346 16.2848 21.9161 16.818 21.9903C17.3512 22.0646 17.8452 21.7034 17.9214 21.1837C18.9286 14.3119 24.734 12.3165 27.5272 12.1735C27.6137 12.1709 27.698 12.157 27.7783 12.1332C27.9206 12.0913 28.0486 12.0187 28.1547 11.9237C28.2588 11.8307 28.3427 11.7154 28.3978 11.5841C28.4395 11.4853 28.4645 11.3784 28.4696 11.2669C28.475 11.1554 28.4602 11.0468 28.428 10.9447C28.343 10.6748 28.1367 10.4509 27.8629 10.3425C27.785 10.3116 27.7023 10.2902 27.6163 10.2799C20.5655 9.2895 18.5274 3.61713 18.3882 0.903158C18.3613 0.378807 17.9034 -0.0250098 17.3654 0.00120769Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
   <footer class="footer bg-primary">
     <div class="container spacer-y">
       <div class="footer-row">
