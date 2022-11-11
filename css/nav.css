@@ -59,12 +59,16 @@
 .navigation .item-right .primary-button,
 .navigation .item-right .secondary-button {
     font-size: 18px;
+    padding: 10px 30px;
     /* font-weight: 700; */
 }
 .social-icons {
     display: flex;
     gap: 30px;
     font-size: 1rem;
+}
+.social-icons li a:hover {
+    color: var(--yellownz);
 }
 .item-center .logo {
     height: 40px;
@@ -211,7 +215,7 @@
 @media (max-width: 992px){
     .header {
         position: sticky;
-        top: 0;
+        top: 0 !important;
     }
     .navbg {
         background-color: var(--whitenz);

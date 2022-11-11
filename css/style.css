@@ -1201,6 +1201,20 @@ section.bg-yellow .slider-button:hover svg {
     padding: 30px;
     background-color: var(--lightbg);
 }
+.radio-list {
+    column-count: 3;
+}
+.filter-dropdown {
+    position: relative;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid rgba(133, 129, 132, 0.4);
+}
+.filter-dropdown::after {
+    content: '\f107';
+    font: var(--fa-font-regular);
+    font-family: "Font Awesome 6 pro"; 
+}
 /* .filter-items .genere-list {
     display: flex;
     flex-wrap: wrap;

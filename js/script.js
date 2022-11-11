@@ -3,8 +3,8 @@ let header = document.querySelector(".header");
 let navHeight = header.clientHeight;
 
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-let currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     header.style.top = "0";
   } else {
@@ -14,11 +14,11 @@ let currentScrollPos = window.pageYOffset;
 }
 
 // navmenu active class toggler
-let url =  window.location.pathname;
+let url = window.location.pathname;
 let menu = document.querySelectorAll(".main-menu li a.nav-link");
-if(url != "/database-desc.html"){
-  menu.forEach(function(element) {
-    if(url == element.pathname) {
+if (url != "/database-desc.html") {
+  menu.forEach(function (element) {
+    if (url == element.pathname) {
       element.classList.add("active");
     } else {
       element.classList.remove("active");
@@ -146,6 +146,6 @@ if (document.querySelector('.details-update-popup')) {
 // filter hide & show using jquery
 let filterButton = $('.filter-icon');
 let filterWrapper = $('.filter-wrapper');
-filterButton.on("click", function() {
+filterButton.on("click", function () {
   filterWrapper.slideToggle();
 });

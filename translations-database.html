@@ -48,7 +48,7 @@
             </ul>
             <div class="saperator"></div>
             <p class="premium-pricing">$XXX<span>/month</span></p>
-            <a href="#" class="primary-button w-100 text-center">Buy Now</a>
+            <a href="javascript:void(0)" class="primary-button w-100 text-center">Buy Now</a>
         </div>
         <div class="popup-overlay"></div>
     </div>
@@ -72,14 +72,14 @@
             <div class="container navigation">
                 <div class="item-left">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
                     </ul>
                 </div>
                 <div class="item-center">
-                    <a href="/">
+                    <a href="./index.html">
                         <img src="./images/nzuko.png" alt="" class="logo">
                     </a>
                 </div>
@@ -108,7 +108,7 @@
                             </button>
                         </form>
                     </li>
-                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
                     <li><a href="./about.html" class="nav-link">About Us</a></li>
                     <li><a href="./article.html" class="nav-link">Articles</a></li>
                     <li><a href="./video.html" class="nav-link">Videos</a></li>
@@ -173,8 +173,8 @@
                     <!-- <div class="filter-row mb-30">
                         <div class="filter-items">
                             <ul class="genere-list">
-                                <li><a href="#" class="active">Recently Added</a></li>
-                                <li><a href="#">Trending Songs</a></li>
+                                <li><a href="javascript:void(0)" class="active">Recently Added</a></li>
+                                <li><a href="javascript:void(0)">Trending Songs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -184,14 +184,14 @@
                         </div>
                         <div class="filter-items">
                             <ul class="genere-list">
-                                <li><a href="#" class="active">Pop</a></li>
-                                <li><a href="#">Rock</a></li>
-                                <li><a href="#">Hip Hop</a></li>
-                                <li><a href="#">Jazz</a></li>
-                                <li><a href="#">Electronic</a></li>
-                                <li><a href="#">Romantic</a></li>
-                                <li><a href="#">Dance</a></li>
-                                <li><a href="#">Classical</a></li>
+                                <li><a href="javascript:void(0)" class="active">Pop</a></li>
+                                <li><a href="javascript:void(0)">Rock</a></li>
+                                <li><a href="javascript:void(0)">Hip Hop</a></li>
+                                <li><a href="javascript:void(0)">Jazz</a></li>
+                                <li><a href="javascript:void(0)">Electronic</a></li>
+                                <li><a href="javascript:void(0)">Romantic</a></li>
+                                <li><a href="javascript:void(0)">Dance</a></li>
+                                <li><a href="javascript:void(0)">Classical</a></li>
                             </ul>
                         </div>
                     </div>
@@ -201,33 +201,169 @@
                         </div>
                         <div class="filter-items">
                             <ul class="genere-list">
-                                <li><a href="#" class="active">Artist 1</a></li>
-                                <li><a href="#">Artist 2</a></li>
-                                <li><a href="#">Artist 3</a></li>
-                                <li><a href="#">Artist 4</a></li>
-                                <li><a href="#">Artist 5</a></li>
-                                <li><a href="#">Artist 6</a></li>
-                                <li><a href="#">Artist 7</a></li>
-                                <li><a href="#">Artist 8</a></li>
+                                <li><a href="javascript:void(0)" class="active">Artist 1</a></li>
+                                <li><a href="javascript:void(0)">Artist 2</a></li>
+                                <li><a href="javascript:void(0)">Artist 3</a></li>
+                                <li><a href="javascript:void(0)">Artist 4</a></li>
+                                <li><a href="javascript:void(0)">Artist 5</a></li>
+                                <li><a href="javascript:void(0)">Artist 6</a></li>
+                                <li><a href="javascript:void(0)">Artist 7</a></li>
+                                <li><a href="javascript:void(0)">Artist 8</a></li>
                             </ul>
                         </div>
                     </div> -->
                     <form action="" method="post" class="advance-search">
-                        <div class="filter-row">
+                        <div class="filter-row mb-30">
                             <ul class="radio-list">
                                 <li>
-                                    <input type="radio" id="author">
+                                    <input type="radio" id="author" name="search-radio">
                                     <label for="author">Search for Author</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="translation">
+                                    <input type="radio" id="book" name="search-radio">
+                                    <label for="book">Search for Book</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="translation" name="search-radio">
                                     <label for="translation">Search for Translation</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="author">
-                                    <label for="author">Search for Author</label>
+                                    <input type="radio" id="translated-title" name="search-radio">
+                                    <label for="translated-title">Search for Publisher (translated title)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="original-title" name="search-radio">
+                                    <label for="original-title">Search for Publisher (original title)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="free-search" name="search-radio">
+                                    <label for="free-search">Free search</label>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="filter-row mb-30">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <h5>Language</h5>
+                                    <select class="form-control filter-dropdown"
+                                        name="search-filter-select-taal">
+                                        <option value="">All</option>
+                                        <option value="Afrikaans">Afrikaans</option>
+                                        <option value="Albanees">Albanian</option>
+                                        <option value="Amhaars">Amharic</option>
+                                        <option value="Arabisch">Arabic</option>
+                                        <option value="Armeens">Armenian</option>
+                                        <option value="Azeri">Azeri</option>
+                                        <option value="Baskisch">Basque</option>
+                                        <option value="Witrussisch">Belarusian</option>
+                                        <option value="Bengali">Bengali</option>
+                                        <option value="Berbers">Berbers</option>
+                                        <option value="Bosnisch">Bosnian</option>
+                                        <option value="Bulgaars">Bulgarian</option>
+                                        <option value="Catalaans">Catalan</option>
+                                        <option value="Chinees">Chinese</option>
+                                        <option value="Complex Chinees">Complex Chinese</option>
+                                        <option value="Kroatisch">Croatian</option>
+                                        <option value="Tsjechisch">Czech</option>
+                                        <option value="Deens">Danish</option>
+                                        <option value="Nederlands">Dutch</option>
+                                        <option value="Nederlands, Frans en Engels">Dutch, French and English</option>
+                                        <option value="Nederlands en Frans">Dutch and French</option>
+                                        <option value="Nederlands en Latijn">Dutch and Latin</option>
+                                        <option value="Nederlands en Surinaams">Dutch and Surinamese</option>
+                                        <option value="Engels">English</option>
+                                        <option value="Engels; Frans">English; French</option>
+                                        <option value="Engels; Duits; Frans">English; German; French</option>
+                                        <option value="Engels; Duits; Servokroatisch; Tsjechisch">English; German; Serbo-Croatian; Czech</option>
+                                        <option value="Engels; Servokroatisch">English; Serbo-Croatian</option>
+                                        <option value="Engels; Zweeds">English; Swedish</option>
+                                        <option value="Esperanto">Esperanto</option>
+                                        <option value="Estisch">Estonian</option>
+                                        <option value="Faeröers">Faeroese</option>
+                                        <option value="Fins">Finnish</option>
+                                        <option value="Frans">French</option>
+                                        <option value="Fries">Frisian</option>
+                                        <option value="Fries en Nederlands">Frisian and Dutch</option>
+                                        <option value="Friulaans">Friulian</option>
+                                        <option value="Gaelic">Gaelic</option>
+                                        <option value="Galicisch">Galician</option>
+                                        <option value="Georgisch">Georgian</option>
+                                        <option value="Duits">German</option>
+                                        <option value="Duits; Engels">German; English</option>
+                                        <option value="Duits of Engels">German or English</option>
+                                        <option value="Ghanees">Ghanaian</option>
+                                        <option value="Grieks">Greek</option>
+                                        <option value="Gujarati">Gujarati</option>
+                                        <option value="Hebreeuws">Hebrew</option>
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="Hindustaans">Hindi</option>
+                                        <option value="Hongaars">Hungarian</option>
+                                        <option value="IJslands">Icelandic</option>
+                                        <option value="Indonesisch">Indonesian</option>
+                                        <option value="Iers">Irish</option>
+                                        <option value="Italiaans">Italian</option>
+                                        <option value="Italiaans; Frans">Italian; French</option>
+                                        <option value="Japans">Japanese</option>
+                                        <option value="Koreaans">Korean</option>
+                                        <option value="Koerdisch">Kurdish</option>
+                                        <option value="Latijn">Latin</option>
+                                        <option value="Lets">Latvian</option>
+                                        <option value="Litouws">Lithuanian</option>
+                                        <option value="Luxemburgs">Luxembourgian</option>
+                                        <option value="Macedonisch">Macedonian</option>
+                                        <option value="Malayalam">Malayalam</option>
+                                        <option value="Marathi">Marathi</option>
+                                        <option value="Middelnederlands">Middle Dutch</option>
+                                        <option value="Montenegrijns">Montenegrin</option>
+                                        <option value="Nepalees">Nepalees</option>
+                                        <option value="Nieuwnoors">Nieuwnoors</option>
+                                        <option value="Noord-Sotho">Noord-Sotho</option>
+                                        <option value="Noors">Norwegian</option>
+                                        <option value="Odia">Odia</option>
+                                        <option value="Oezbeeks">Oezbeeks</option>
+                                        <option value="Papiamento">Papiamento</option>
+                                        <option value="Papiamentu">Papiamentu</option>
+                                        <option value="Perzisch (Farsi)">Persian (Farsi)</option>
+                                        <option value="Pools">Polish</option>
+                                        <option value="Portugees">Portuguese</option>
+                                        <option value="Pulaars">Pulaars</option>
+                                        <option value="Punjabi">Punjabi</option>
+                                        <option value="Romani">Romani</option>
+                                        <option value="Roemeens">Romanian</option>
+                                        <option value="Russisch">Russian</option>
+                                        <option value="Schots">Scottish</option>
+                                        <option value="Servisch">Serbian</option>
+                                        <option value="Servokroatisch">Serbo-Croatian</option>
+                                        <option value="Singalees">Singalees</option>
+                                        <option value="Slowaaks">Slovak</option>
+                                        <option value="Sloveens">Slovenian</option>
+                                        <option value="Somalisch">Somali</option>
+                                        <option value="Spaans">Spanish</option>
+                                        <option value="Srilankees">Srilankan</option>
+                                        <option value="Surinaams [Sarnami]">Surinamese</option>
+                                        <option value="Swazi">Swazi</option>
+                                        <option value="Zweeds">Swedish</option>
+                                        <option value="Tamil">Tamil</option>
+                                        <option value="Telegu">Telegu</option>
+                                        <option value="Thai">Thai</option>
+                                        <option value="Tsonga">Tsonga</option>
+                                        <option value="Tswana">Tswana</option>
+                                        <option value="Turks">Turkish</option>
+                                        <option value="Oekraiens">Ukrainian</option>
+                                        <option value="Urdu">Urdu</option>
+                                        <option value="Divers">Various</option>
+                                        <option value="Venda">Venda</option>
+                                        <option value="Vietnamees">Vietnamese</option>
+                                        <option value="Welsh">Welsh</option>
+                                        <option value="Wolof; Frans">Wolof ; French</option>
+                                        <option value="Xhosa">Xhosa</option>
+                                        <option value="Zoeloe">Zoeloe</option>
+                                        <option value="Zuid-Ndebele">Zuid-Ndebele</option>
+                                        <option value="Zuid-Sotho">Zuid-Sotho</option>
+                                        <option value="Zwitserduits">Zwitserduits</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -346,65 +482,65 @@
     </main>
     <footer class="footer bg-primary">
         <div class="container spacer-y">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <img src="./images/nzuko_white.png" alt="">
-                    <p class="para-text mt-3 mb-0">
-                        We write articles, create mini docs and take photographs showcasing Igbo (Nigerian) content.
-                        Much of it
-                        discusses history, though we are planning to do more.
-                    </p>
-                    <ul class="footer_socials social-icons">
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <p class="footer-heading">Quick Links</p>
-                    <ul class="footer-list mt-3 mt-lg-4">
-                        <li><a href="#">Submissions</a></li>
-                        <li><a href="#">Advertis</a></li>
-                        <li><a href="#">Editorial Standards</a></li>
-                        <li><a href="#">View All Articles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <p class="footer-heading">Support</p>
-                    <ul class="footer-list mt-3 mt-lg-4">
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <p class="footer-heading">Company</p>
-                    <ul class="footer-list mt-3 mt-lg-4">
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Privacy & Consent</a></li>
-                    </ul>
-                </div>
+          <div class="footer-row">
+            <div class="footer-col">
+              <a href="./index.html">
+                <img src="./images/nzuko_white.png" alt="">
+              </a>
+              <p class="para-text mt-3 mb-0">
+                We write articles, create mini docs and take photographs showcasing Igbo (Nigerian) content. Much of it
+                discusses history, though we are planning to do more.
+              </p>
+              <ul class="footer_socials social-icons">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
             </div>
+            <div class="footer-col">
+              <p class="footer-heading">Quick Links</p>
+              <ul class="footer-list mt-3 mt-lg-4">
+                <li><a href="javascript:void(0)">Submissions</a></li>
+                <li><a href="javascript:void(0)">Advertis</a></li>
+                <li><a href="javascript:void(0)">Editorial Standards</a></li>
+                <li><a href="javascript:void(0)">View All Articles</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <p class="footer-heading">Support</p>
+              <ul class="footer-list mt-3 mt-lg-4">
+                <li><a href="javascript:void(0)">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <p class="footer-heading">Company</p>
+              <ul class="footer-list mt-3 mt-lg-4">
+                <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                <li><a href="javascript:void(0)">Cookies Policy</a></li>
+                <li><a href="javascript:void(0)">Privacy & Consent</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="copyright text-white">
-            <div class="container p-md-0">
-                <div class="copyright-row">
-                    <div class="cp-left">
-                        <p class="mb-0">&copy; <span class="year"></span> <a href="#"
-                                class="theme-link">Nzukobrand.com</a> All rights reserved.</p>
-                    </div>
-                    <div class="cp-right">
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="container p-md-0">
+            <div class="copyright-row">
+              <div class="cp-left">
+                <p class="mb-0">&copy; <span class="year"></span> <a href="./index.html" class="theme-link">Nzukobrand.com</a> All rights reserved.</p>
+              </div>
+              <div class="cp-right">
+                <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
